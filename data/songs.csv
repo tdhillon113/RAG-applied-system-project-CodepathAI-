@@ -9,3 +9,8 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,Desert Breeze,Mojave Echo,country,relaxed,0.45,96,0.70,0.65,0.65
+12,Neon Chase,Hyperdrive,electronic,energetic,0.88,140,0.73,0.90,0.10
+13,Moonlit Whisper,Velvet Shore,soul,romantic,0.55,88,0.82,0.60,0.30
+14,Thunder Pulse,Steel Anthem,metal,intense,0.96,160,0.40,0.70,0.08
+15,Garden Walk,Soft Petal,acoustic,mellow,0.30,72,0.68,0.45,0.95
