@@ -42,7 +42,8 @@ Ranked Recommendations with Explanations
     ↓
 [Optional: Human Review]
 ```
-<img src="RAG-applied-system-project-CodepathAI-final/mermaid.png" width="800" />
+<img src="RAG-applied-system-project-CodepathAI-final/mermaid.png" alt="Architecture diagram" width="800" />
+
 
 **Data Flow**:
 1. User preferences input
@@ -168,7 +169,7 @@ streamlit
 
 ---
 
-![Final AI CodePath](final%20AI%20codepath.gif)
+<img src="final AI codepath.gif" alt="Final AI CodePath animation" width="800" />
 
 ### 7.  Reflection & Critical Analysis
 
