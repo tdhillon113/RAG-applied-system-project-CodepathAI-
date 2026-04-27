@@ -1,8 +1,8 @@
 # 🎓 CodePath AI Final Project: Music Recommender with Genre/Artist Context RAG
 
-## ✅ Project Submission Checklist
+##  Project Submission Checklist
 
-### 1. ✅ Project Purpose & AI Integration
+### 1. Project Purpose & AI Integration
 
 **Original Project**:
 - Module 3 Music Recommender Simulation (basic scoring algorithm)
@@ -14,14 +14,14 @@
 - Enables intelligent cross-genre recommendations
 
 **AI Features Used**:
-- ✅ **Retrieval-Augmented Generation (RAG)** - Core feature, fully integrated
-- ✅ Retrieves genre relationships, artist styles, mood associations from knowledge base
-- ✅ Uses retrieved context to enhance recommendation scores in real-time
-- ✅ Improves recommendations beyond simple rule-based matching
+-  **Retrieval-Augmented Generation (RAG)** - Core feature, fully integrated
+-  Retrieves genre relationships, artist styles, mood associations from knowledge base
+-  Uses retrieved context to enhance recommendation scores in real-time
+-  Improves recommendations beyond simple rule-based matching
 
 ---
 
-### 2. ✅ System Architecture & Design
+### 2.  System Architecture & Design
 
 **Architecture Diagram** (in README_RAG.md):
 ```
@@ -42,6 +42,7 @@ Ranked Recommendations with Explanations
     ↓
 [Optional: Human Review]
 ```
+<img src="mermaid.png" width="800" />
 
 **Data Flow**:
 1. User preferences input
@@ -58,17 +59,17 @@ Ranked Recommendations with Explanations
 
 ---
 
-### 3. ✅ Documentation
+### 3.  Documentation
 
 **README_RAG.md** includes:
-- ✅ **Title & Summary**: What project does and why it matters
-- ✅ **Original Project**: 2-3 sentence description of Module 3 recommender
-- ✅ **Architecture Overview**: System diagram with data flow
-- ✅ **Setup Instructions**: Step-by-step with pip installation and commands
-- ✅ **Sample Interactions**: 3+ detailed examples (pop fan, lofi fan, edge case)
-- ✅ **Design Decisions**: Why RAG vs. alternatives, why JSON vs. embeddings, etc.
-- ✅ **Testing Summary**: 20 tests, all passing. What worked, what didn't
-- ✅ **Reflection**: Limitations/biases, AI collaboration instances, key learnings
+-  **Title & Summary**: What project does and why it matters
+-  **Original Project**: 2-3 sentence description of Module 3 recommender
+-  **Architecture Overview**: System diagram with data flow
+-  **Setup Instructions**: Step-by-step with pip installation and commands
+-  **Sample Interactions**: 3+ detailed examples (pop fan, lofi fan, edge case)
+-  **Design Decisions**: Why RAG vs. alternatives, why JSON vs. embeddings, etc.
+-  **Testing Summary**: 20 tests, all passing. What worked, what didn't
+-  **Reflection**: Limitations/biases, AI collaboration instances, key learnings
 
 **Additional Documentation**:
 - Original README.md (from Module 3)
@@ -77,10 +78,10 @@ Ranked Recommendations with Explanations
 
 ---
 
-### 4. ✅ Reliability & Testing
+### 4.  Reliability & Testing
 
 **Automated Tests**: `tests/test_rag_system.py`
-- **20 tests**, all passing ✅
+- **20 tests**, all passing 
 - Coverage:
   - Knowledge base retrieval (9 tests)
   - RAG scoring logic (3 tests)
@@ -89,29 +90,29 @@ Ranked Recommendations with Explanations
   - Malformed preferences, missing files, etc.
 
 **Logging & Guardrails**:
-- ✅ Comprehensive logging at each decision point
-- ✅ Configured logging with INFO/DEBUG levels
-- ✅ Graceful error handling for missing KB, malformed data
-- ✅ Each recommendation includes detailed breakdown of scoring
-- ✅ Synergy bonuses are logged when applied
+- Comprehensive logging at each decision point
+- Configured logging with INFO/DEBUG levels
+- Graceful error handling for missing KB, malformed data
+- Each recommendation includes detailed breakdown of scoring
+- Synergy bonuses are logged when applied
 
 **Manual Testing**:
-- ✅ Tested end-to-end with `python3 -m src.main`
-- ✅ Proper recommendations generated
-- ✅ Genre context displayed
-- ✅ RAG bonuses visible in explanations
+- Tested end-to-end with `python3 -m src.main`
+- Proper recommendations generated
+- Genre context displayed
+- RAG bonuses visible in explanations
 
 **Test Results Summary**:
 ```
-✅ 20/20 tests passed
-✅ Query latency: <10ms
-✅ Knowledge base coverage: 12 genres + 13 artists
-✅ ~60% of recommendations benefit from RAG enhancement
+20/20 tests passed
+Query latency: <10ms
+Knowledge base coverage: 12 genres + 13 artists
+~60% of recommendations benefit from RAG enhancement
 ```
 
 ---
 
-### 5. ✅ Setup & Reproducibility
+### 5. Setup & Reproducibility
 
 **Requirements.txt**:
 ```
@@ -127,15 +128,15 @@ streamlit
 4. Run tests: `python3 -m pytest tests/ -v`
 
 **Reproducibility**:
-- ✅ All dependencies pinned
-- ✅ CSV data included (songs.csv)
-- ✅ Knowledge base included (context_knowledge_base.json)
-- ✅ Tests validate functionality
-- ✅ Clear output format
+- All dependencies pinned
+- CSV data included (songs.csv)
+- Knowledge base included (context_knowledge_base.json)
+- Tests validate functionality
+- Clear output format
 
 ---
 
-### 6. ✅ Sample Interactions Demonstrated
+### 6.  Sample Interactions Demonstrated
 
 **Example 1: Pop Fan** (in README_RAG.md)
 - Input: {genre: pop, mood: happy, energy: 0.8}
@@ -167,31 +168,31 @@ streamlit
 
 ---
 
-### 7. ✅ Reflection & Critical Analysis
+### 7.  Reflection & Critical Analysis
 
 **Limitations & Biases** (in README_RAG.md):
-- ✅ Small KB (only 12 genres)
-- ✅ Hand-curated relationships are subjective
-- ✅ Single-genre per song (no multi-genre)
-- ✅ No user history learning
-- ✅ Binary acoustic preference
-- ✅ Static KB vs. evolving music landscape
+-  Small KB (only 12 genres)
+-  Hand-curated relationships are subjective
+-  Single-genre per song (no multi-genre)
+-  No user history learning
+-  Binary acoustic preference
+-  Static KB vs. evolving music landscape
 
 **Design Trade-offs**:
-1. ✅ Why JSON knowledge base?
+1.  Why JSON knowledge base?
    - Good: Fast, deterministic, interpretable
    - Bad: Not scalable to millions of genres/artists
-2. ✅ Why sum bonuses vs. multiply?
+2.  Why sum bonuses vs. multiply?
    - Good: Bonuses don't disappear, more transparent
    - Bad: Harder to weight interactions
-3. ✅ Why hand-curated vs. embeddings?
+3.  Why hand-curated vs. embeddings?
    - Good: Interpretable, faster, no model needed
    - Bad: Manual effort, less flexible
 
 **AI Collaboration Reflection** (in README_RAG.md):
-- ✅ Helpful instance: AI suggested sum bonuses instead of multiplication
-- ✅ Flawed instance: AI suggested embedding vectors when simpler solution worked
-- ✅ Key learning: Occam's Razor applies to AI systems too
+-  Helpful instance: AI suggested sum bonuses instead of multiplication
+-  Flawed instance: AI suggested embedding vectors when simpler solution worked
+-  Key learning: Occam's Razor applies to AI systems too
 
 **What Surprised Me**:
 - How much RAG improves recommendations with minimal data
@@ -200,7 +201,7 @@ streamlit
 
 ---
 
-### 8. ✅ Clean Git History
+### 8. Clean Git History
 
 **6 Organized Commits**:
 ```
@@ -213,13 +214,13 @@ streamlit
 ```
 
 **Commit Strategy**:
-- ✅ Logical ordering (KB → Retriever → Integration → Tests → Docs)
-- ✅ Short, descriptive messages
-- ✅ Each commit is self-contained
+-  Logical ordering (KB → Retriever → Integration → Tests → Docs)
+-  Short, descriptive messages
+-  Each commit is self-contained
 
 ---
 
-## 📊 Project Summary
+##  Project Summary
 
 | Aspect | Status | Details |
 |--------|--------|---------|
@@ -251,15 +252,15 @@ python3 -m pytest tests/test_rag_system.py -v
 ```
 
 **Expected Output**:
-- ✅ Top 5 recommendations with scores
-- ✅ Detailed explanations including RAG factors
-- ✅ Genre characteristics from KB
-- ✅ Logging showing RAG queries
-- ✅ All 20 tests passing
+-  Top 5 recommendations with scores
+-  Detailed explanations including RAG factors
+-  Genre characteristics from KB
+-  Logging showing RAG queries
+-  All 20 tests passing
 
 ---
 
-## 📁 Project Files
+##  Project Files
 
 ```
 ai110-module3show-musicrecommendersimulation-starter/
