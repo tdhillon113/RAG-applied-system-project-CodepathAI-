@@ -168,6 +168,8 @@ streamlit
 
 ---
 
+![Final AI CodePath](final%20AI%20codepath.gif)
+
 ### 7.  Reflection & Critical Analysis
 
 **Limitations & Biases** (in README_RAG.md):
