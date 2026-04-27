@@ -1,4 +1,4 @@
-# 🎓 CodePath AI Final Project: Music Recommender with Genre/Artist Context RAG
+# CodePath AI Final Project: Music Recommender with Genre/Artist Context RAG
 
 ##  Project Submission Checklist
 
@@ -24,24 +24,7 @@
 ### 2.  System Architecture & Design
 
 **Architecture Diagram** (in README_RAG.md):
-```
-User Input
-    ↓
-[Recommender Engine with RAG]
-    ├─ Baseline Scoring (genre/mood/energy/acoustic)
-    ├─ RAG Query: Get genre relationships
-    ├─ RAG Enhancement: Apply synergy bonuses
-    └─ Final Score = Baseline + RAG Bonus
-    ↓
-[Knowledge Base Query]
-    → Retrieve genre context
-    → Find related genres
-    → Calculate transition scores
-    ↓
-Ranked Recommendations with Explanations
-    ↓
-[Optional: Human Review]
-```
+
 <img src="RAG-applied-system-project-CodepathAI-final/mermaid.png" alt="Architecture diagram" width="800" />
 
 
