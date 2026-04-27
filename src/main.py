@@ -1,34 +1,74 @@
 """
-Command line runner for the Music Recommender Simulation.
+Command line runner for the Music Recommender Simulation with RAG.
 
-This file helps you quickly run and test your recommender.
-
-You will implement the functions in recommender.py:
-- load_songs
-- score_song
-- recommend_songs
+This demonstrates music recommendations enhanced with Retrieval-Augmented Generation
+to provide context-aware genre and artist insights.
 """
 
-from src.recommender import load_songs, recommend_songs
+import logging
+
+from src.recommender import load_songs, recommend_songs_with_rag
+from src.genre_context_rag import GenreArtistRetriever
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
+logger = logging.getLogger(__name__)
 
 
 def main() -> None:
+    """Run the music recommender with RAG enhancement."""
+    logger.info("Starting Music Recommender with RAG")
+
+    # Load songs
     songs = load_songs("data/songs.csv")
+    logger.info(f"Loaded {len(songs)} songs")
 
-    # Starter example profile
-    user_prefs = {"genre": "pop", "mood": "happy", "energy": 0.8}
+    # Initialize RAG retriever
+    retriever = GenreArtistRetriever("data/context_knowledge_base.json")
 
-    recommendations = recommend_songs(user_prefs, songs, k=5)
+    # Example user profile
+    user_prefs = {
+        "genre": "pop",
+        "mood": "happy",
+        "energy": 0.8,
+        "likes_acoustic": False,
+    }
 
-    print("\nTop recommendations:\n")
-    for rec in recommendations:
-        # You decide the structure of each returned item.
-        # A common pattern is: (song, score, explanation)
-        song, score, explanation = rec
-        print(f"{song['title']} - Score: {score:.2f}")
-        print(f"Because: {explanation}")
+    logger.info(f"User preferences: {user_prefs}")
+
+    # Get recommendations with RAG
+    recommendations = recommend_songs_with_rag(user_prefs, songs, k=5, retriever=retriever)
+
+    print("\n" + "=" * 70)
+    print("🎵 MUSIC RECOMMENDER WITH GENRE/ARTIST CONTEXT (RAG)")
+    print("=" * 70)
+    print(f"\nUser Preferences: Genre={user_prefs['genre']}, Mood={user_prefs['mood']}, Energy={user_prefs['energy']}")
+    print("\n" + "-" * 70)
+    print("Top 5 Recommendations (with RAG Context):")
+    print("-" * 70 + "\n")
+
+    for i, (song, score, explanation) in enumerate(recommendations, 1):
+        print(f"{i}. {song['title']} - {song['artist']}")
+        print(f"   Genre: {song['genre']} | Score: {score:.2f}")
+        print(f"   Because: {explanation}")
+
+        # Retrieve and display genre context
+        genre_context = retriever.get_genre_context(song["genre"])
+        if genre_context:
+            characteristics = genre_context.get("characteristics", [])
+            if characteristics:
+                print(f"   Genre characteristics: {', '.join(characteristics)}")
+
         print()
+
+    print("=" * 70)
+    print("✨ Recommendations powered by Retrieval-Augmented Generation (RAG)")
+    print("=" * 70)
 
 
 if __name__ == "__main__":
     main()
+
