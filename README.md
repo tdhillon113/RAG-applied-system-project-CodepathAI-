@@ -200,18 +200,6 @@ streamlit
 
 ---
 
-### 8. Clean Git History
-
-**6 Organized Commits**:
-```
-1963d2f Add genre/artist context knowledge base for RAG.
-44af90c Add GenreArtistRetriever RAG module for context-aware recommendations.
-3b5a144 Integrate RAG into recommender scoring with score_song_with_rag().
-73babb9 Update main.py to use RAG-enhanced recommendations with logging.
-03476b2 Add comprehensive test suite for RAG system (20 tests).
-19a91fa Add comprehensive README with architecture, examples, and reflection.
-```
-
 **Commit Strategy**:
 -  Logical ordering (KB → Retriever → Integration → Tests → Docs)
 -  Short, descriptive messages
@@ -223,20 +211,20 @@ streamlit
 
 | Aspect | Status | Details |
 |--------|--------|---------|
-| **AI Feature** | ✅ | RAG fully integrated into main logic |
-| **Architecture** | ✅ | Diagram + data flow in README |
-| **Setup** | ✅ | Reproducible, clear instructions |
-| **Functionality** | ✅ | Works end-to-end, tested |
-| **Testing** | ✅ | 20 automated tests, all passing |
-| **Documentation** | ✅ | Comprehensive README with examples |
-| **Design Decisions** | ✅ | Trade-offs explained |
-| **Reflection** | ✅ | Limitations, biases, AI collaboration |
-| **Git History** | ✅ | 6 clean, logical commits |
-| **Logging/Guardrails** | ✅ | Comprehensive error handling |
+| **AI Feature** |RAG fully integrated into main logic |
+| **Architecture** |  Diagram + data flow in README |
+| **Setup** |  Reproducible, clear instructions |
+| **Functionality** | Works end-to-end, tested |
+| **Testing** | 20 automated tests, all passing |
+| **Documentation** | Comprehensive README with examples |
+| **Design Decisions** |Trade-offs explained |
+| **Reflection** | Limitations, biases, AI collaboration |
+| **Git History** | 6 clean, logical commits |
+| **Logging/Guardrails** | Comprehensive error handling |
 
 ---
 
-## 🚀 Running the Project
+##  Running the Project
 
 **Quick Start**:
 ```bash
