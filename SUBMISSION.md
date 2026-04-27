@@ -42,7 +42,7 @@ Ranked Recommendations with Explanations
     ↓
 [Optional: Human Review]
 ```
-<img src="mermaid.png" width="800" />
+<img src="RAG-applied-system-project-CodepathAI-final/mermaid.png" width="800" />
 
 **Data Flow**:
 1. User preferences input
