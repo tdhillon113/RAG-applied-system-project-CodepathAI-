@@ -1,0 +1,178 @@
+{
+  "genres": {
+    "pop": {
+      "description": "Mainstream popular music with broad appeal",
+      "characteristics": ["catchy melodies", "upbeat rhythm", "commercial appeal"],
+      "related_genres": ["indie pop", "electropop", "synthpop"],
+      "typical_moods": ["happy", "energetic"],
+      "typical_energy_range": [0.7, 1.0],
+      "notable_artists": ["Neon Echo", "Max Pulse"]
+    },
+    "lofi": {
+      "description": "Lo-fidelity hip-hop, chill and atmospheric",
+      "characteristics": ["relaxing", "lo-fi beats", "study-friendly"],
+      "related_genres": ["ambient", "downtempo", "chillhop"],
+      "typical_moods": ["chill", "focused", "mellow"],
+      "typical_energy_range": [0.2, 0.5],
+      "notable_artists": ["LoRoom"]
+    },
+    "rock": {
+      "description": "Guitar-driven music with energy and attitude",
+      "characteristics": ["electric guitars", "strong drums", "powerful"],
+      "related_genres": ["metal", "alternative rock", "indie rock"],
+      "typical_moods": ["intense", "energetic"],
+      "typical_energy_range": [0.8, 1.0],
+      "notable_artists": ["Voltline"]
+    },
+    "ambient": {
+      "description": "Atmospheric and immersive soundscapes",
+      "characteristics": ["soundscapes", "meditative", "minimal rhythms"],
+      "related_genres": ["lofi", "downtempo", "modern classical"],
+      "typical_moods": ["chill", "relaxed", "mellow"],
+      "typical_energy_range": [0.1, 0.4],
+      "notable_artists": ["Orbit Bloom"]
+    },
+    "jazz": {
+      "description": "Improvisational music with complex harmonies",
+      "characteristics": ["improvisation", "complex chords", "instrumental"],
+      "related_genres": ["soul", "funk", "smooth jazz"],
+      "typical_moods": ["relaxed", "romantic"],
+      "typical_energy_range": [0.3, 0.6],
+      "notable_artists": ["Slow Stereo"]
+    },
+    "synthwave": {
+      "description": "80s-inspired electronic music with retro vibes",
+      "characteristics": ["synthesizers", "retro aesthetics", "cinematic"],
+      "related_genres": ["electronic", "retrowave", "darksynth"],
+      "typical_moods": ["moody", "atmospheric"],
+      "typical_energy_range": [0.6, 0.8],
+      "notable_artists": ["Neon Echo"]
+    },
+    "indie pop": {
+      "description": "Independent alternative pop music",
+      "characteristics": ["indie vibes", "melodic", "unique"],
+      "related_genres": ["pop", "indie rock", "alternative"],
+      "typical_moods": ["happy", "upbeat"],
+      "typical_energy_range": [0.6, 0.8],
+      "notable_artists": ["Indigo Parade"]
+    },
+    "country": {
+      "description": "Folk-influenced music with storytelling",
+      "characteristics": ["acoustic guitars", "storytelling", "roots"],
+      "related_genres": ["folk", "Americana", "country pop"],
+      "typical_moods": ["relaxed", "romantic"],
+      "typical_energy_range": [0.3, 0.6],
+      "notable_artists": ["Mojave Echo"]
+    },
+    "electronic": {
+      "description": "Dance and electronic music",
+      "characteristics": ["synthesizers", "beats", "danceable"],
+      "related_genres": ["house", "techno", "synthwave"],
+      "typical_moods": ["energetic", "moody"],
+      "typical_energy_range": [0.7, 1.0],
+      "notable_artists": ["Hyperdrive"]
+    },
+    "soul": {
+      "description": "Expressive music rooted in R&B and blues",
+      "characteristics": ["emotional vocals", "smooth", "expressive"],
+      "related_genres": ["R&B", "funk", "gospel"],
+      "typical_moods": ["romantic", "emotional"],
+      "typical_energy_range": [0.4, 0.7],
+      "notable_artists": ["Velvet Shore"]
+    },
+    "metal": {
+      "description": "Heavy amplified rock with intensity",
+      "characteristics": ["heavy guitars", "powerful vocals", "distortion"],
+      "related_genres": ["rock", "hardcore", "progressive metal"],
+      "typical_moods": ["intense", "energetic"],
+      "typical_energy_range": [0.9, 1.0],
+      "notable_artists": ["Steel Anthem"]
+    },
+    "acoustic": {
+      "description": "Unplugged instruments and organic sounds",
+      "characteristics": ["acoustic guitars", "organic", "intimate"],
+      "related_genres": ["folk", "singer-songwriter", "country"],
+      "typical_moods": ["mellow", "relaxed"],
+      "typical_energy_range": [0.2, 0.5],
+      "notable_artists": ["Soft Petal"]
+    }
+  },
+  "artists": {
+    "Neon Echo": {
+      "genres": ["pop", "synthwave"],
+      "influence": "80s synthpop and modern pop",
+      "collaboration_style": "retro-futuristic pop"
+    },
+    "LoRoom": {
+      "genres": ["lofi"],
+      "influence": "chill beats and hip-hop",
+      "collaboration_style": "atmospheric and relaxing"
+    },
+    "Voltline": {
+      "genres": ["rock"],
+      "influence": "classic and modern rock",
+      "collaboration_style": "energetic and powerful"
+    },
+    "Paper Lanterns": {
+      "genres": ["lofi"],
+      "influence": "jazz-influenced lofi",
+      "collaboration_style": "smooth and atmospheric"
+    },
+    "Max Pulse": {
+      "genres": ["pop"],
+      "influence": "dance pop and fitness",
+      "collaboration_style": "high-energy pop"
+    },
+    "Orbit Bloom": {
+      "genres": ["ambient"],
+      "influence": "space music and ambient",
+      "collaboration_style": "meditative soundscapes"
+    },
+    "Slow Stereo": {
+      "genres": ["jazz"],
+      "influence": "smooth jazz and improvisation",
+      "collaboration_style": "relaxing jazz"
+    },
+    "Indigo Parade": {
+      "genres": ["indie pop"],
+      "influence": "indie pop and alternative",
+      "collaboration_style": "melodic and quirky"
+    },
+    "Mojave Echo": {
+      "genres": ["country"],
+      "influence": "country and folk",
+      "collaboration_style": "acoustic storytelling"
+    },
+    "Hyperdrive": {
+      "genres": ["electronic"],
+      "influence": "house and electronic dance",
+      "collaboration_style": "high-energy electronic"
+    },
+    "Velvet Shore": {
+      "genres": ["soul"],
+      "influence": "soul and R&B",
+      "collaboration_style": "smooth soul"
+    },
+    "Steel Anthem": {
+      "genres": ["metal"],
+      "influence": "heavy metal and rock",
+      "collaboration_style": "intense and powerful"
+    },
+    "Soft Petal": {
+      "genres": ["acoustic"],
+      "influence": "acoustic and folk",
+      "collaboration_style": "intimate and organic"
+    }
+  },
+  "genre_transitions": {
+    "pop_to_indie_pop": 0.8,
+    "pop_to_synthwave": 0.6,
+    "lofi_to_ambient": 0.85,
+    "lofi_to_jazz": 0.7,
+    "rock_to_metal": 0.75,
+    "electronic_to_synthwave": 0.8,
+    "soul_to_jazz": 0.75,
+    "acoustic_to_country": 0.8,
+    "ambient_to_lofi": 0.85
+  }
+}
