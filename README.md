@@ -175,8 +175,6 @@ streamlit
 | **Documentation** |   Comprehensive README with examples |
 | **Design Decisions** |  Trade-offs explained |
 | **Reflection** |  Limitations, biases, AI collaboration |
-| **Git History**   6 clean, logical commits |
-| **Logging/Guardrails**   Comprehensive error handling |
 
 ---
 
